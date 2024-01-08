@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+  line-height: initial;
+  transition: 0.9s ease-in-out;
+}
+
+@font-face {
+  font-family: 'recoleta';
+  src: url('../fonts/Recoleta-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "recoleta", sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h5 {
+  font-size: 20px !important;
+}
+h6 {
+  font-size: 16px !important;
+  font-family: paralucent, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* defaults */
+body {
+  font-family: 'scandia-web', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #262626;
+  font-weight: 400;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+.big-title {
+  font-family: "recoleta", sans-serif;
+  font-size: 56px;
+  line-height: 1.1;
+}
+.big-paragraph {
+  font-family: "scandia-web", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+.big-subheader {
+  font-size: 14px;
+  font-family: paralucent, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.small-paragraph {
+  font-size: 13px;
+  font-family: "scandia-web", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width:768px) {
+  h1 {
+    font-size: 24px !important;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .big-title {
+    font-size: 40px;
+  }
+  .big-paragraph {
+    font-size: 18px;
+  }
+}
+/* font-family */
+.paralucent-bold {
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+}
+
+.paralucent-medium {
+  font-family: paralucent, sans-serif;
+  font-weight: 500;
+}
+
+.scandia-medium {
+  font-family: scandia-web, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.scandia-regular {
+  font-family: scandia-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.s-btnl-primary {
+  padding: 12px 20px;
+  border-radius: 21px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  font-family: paralucent, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.84px;
+}
+.btn-secondary {
+  padding: 16px 28px;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  font-family: paralucent, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.84px;
+}
