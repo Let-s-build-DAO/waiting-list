@@ -2,142 +2,90 @@
   padding-top: 160px;
 }
 /* page sizings */
-.padding-x {
-  padding-left: 160px;
-  padding-right: 160px;
+.section-padding-small {
+  padding: 20px;
 }
-.padding-left {
-  padding-left: 160px;
+.contact-senction {
+  border-top: 1px solid #101010;
+  border-bottom: 1px solid #101010;
 }
-.padding-right {
-  padding-right: 160px;
+.section-border-right {
+  border-right: 1px solid #101010;
 }
-.padding-y {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.contact-section {
+  border-top: 1px solid #101010;
+  border-bottom: 1px solid #101010;
 }
-.padding-top {
-  padding-top: 120px;
+.section-border-bottom {
+  border-bottom: 1px solid #101010;
 }
-.padding-bottom {
-  padding-bottom: 120px;
+.padding-top-80 {
+  padding-top: 80px;
+}
+
+.bg-about {
+  background: linear-gradient(rgba(55, 64, 114, .5), rgba(55, 64, 114, .5)), url(../../assets/images/bg-who-we-are-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-1 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-pipeline-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-2 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-construction-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-3 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-mechanical-civil-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-4 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-telecoms-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-5 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-electrical-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-6 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-heat-exchanger-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+}
+.bg-services-7 {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-elect-maintenance-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
 }
 @media (max-width: 821px) {
-  .padding-x {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-  .padding-left {
-    padding-left: 18px;
-  }
-  .padding-right {
-    padding-right: 18px;
-  }
-  .padding-y {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .padding-top {
-    padding-top: 80px;
-  }
-  .padding-bottom {
-    padding-bottom: 80px;
-  }
-}
-
-.trending-deals-container {
-  background: linear-gradient(rgba(38, 38, 38, .8), rgba(38, 38, 38, .8)), url(../../assets/images/bg-realtor-cta-min.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 240px;
-  padding-bottom: 120px;
-  margin-top: 80px;
-}
-.hush-card {
-  border-radius: 4px;
-  overflow: hidden;
-}
-.hush-card-body {
-  padding: 16px 12px 24px 12px;
-}
-.price-tag {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: white;
-  padding: 4px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-family: "scandia-web", sans-serif;
-  font-weight: 500 !important;
-  font-style: normal;
-}
-
-.plain-cards {
-  height: 100%;
-  background: #262626;
-  padding: 32px 16px;
-  transition: 0.4s ease-out;
-  cursor: pointer;
-}
-
-.plain-cards div img {
-  transition: 0.4s ease-out;
-}
-.plain-cards:hover div img {
-  margin-right: 10px;
-  transition: 0.4s ease-out;
-}
-
-.box-one {
-  box-shadow: 0 4px 0 rgba(125, 181, 48, 1);
-}
-.box-two {
-  box-shadow: 0 4px 0 rgba(35, 170, 153, 1);
-}
-.box-three {
-  box-shadow: 0 4px 0 rgba(41, 201, 139, 1);
-}
-.box-four {
-  box-shadow: 0 4px 0 rgba(224, 195, 40, 1);
-}
-.arrow {
-  -webkit-animation: slide 1s ease-in-out infinite;
-  animation: slide 1s ease-in-out infinite;
-  transition: .3s ease-in-out;
-} 
-@keyframes slide {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(0, 10px);
-  }
-}
-
-.big-cards {
-  border-radius: 4px;
-  overflow: hidden;
-}
-.big-card-one {
-  background: linear-gradient(rgba(38, 38, 38, .8), rgba(38, 38, 38, .8)), url(../../assets/images/bg-realtor-cta-min.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 80px 40px;
-}
-.big-card-two {
-  background: url(../../assets/images/bg-acad-card.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 80px 40px;
-}
-
-hr {
-  border: 1px solid #d2d8cb;
-  width: 100%;
 }

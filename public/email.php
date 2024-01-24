@@ -1,17 +1,18 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Retrieve form data
-    $name = $_POST['name'];
-    $option = $_POST['option'];
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $companyName = $_POST['companyName'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 
     // Check if email is valid
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Define recipient email addresses
         $contacts = array(
-            "info@hushhomesng.com",
+            "info@tusore.com",
             // Add more email addresses as needed
         );
 
@@ -20,13 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Loop through each recipient and send email
         foreach ($contacts as $contact) {
             // Prepare email content
-            $subject = 'New enquiry from Hushhomes.com';
-            $message = generateEmailContent($name, $option, $email, $phone, $message);
+            $subject = 'New enquiry from Tusore.com';
+            $message = generateEmailContent($firstName, $lastName, $companyName, $email, $subject, $message);
 
             // Set headers for HTML email
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            $headers .= 'From: <info@hushhomesng.com>' . "\r\n";
+            $headers .= 'From: <info@tusore.com>' . "\r\n";
 
             // Send email to recipient
             if (mail($contact, $subject, $message, $headers)) {
@@ -36,11 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if ($emailSentToHost) {
             // Prepare email content for the sender
-            $subjectSender = 'Hushhomes received your enquiry';
-            $bodySender = generateSenderEmailContent($name, $option, $orgBudget);
+            $subjectSender = 'Tusore received your enquiry';
+            $bodySender = generateSenderEmailContent($firstName, $companyName);
 
             // Set headers for the email to the sender
-            $headersSender .= "From: Hushhomes Experience <info@hushhomesng.com>\r\n";
+            $headersSender .= "From: Tusore Experience <info@tusore.com>\r\n";
             $headersSender = "MIME-Version: 1.0" . "\r\n";
             $headersSender .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
@@ -81,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($response);
 
-function generateEmailContent($name, $option, $phone, $email, $message) {
+function generateEmailContent($firstName, $lastName, $companyName, $email, $subject, $message) {
     $message = "
         <html>
         <head>
@@ -100,11 +101,11 @@ function generateEmailContent($name, $option, $phone, $email, $message) {
                                 Hey there! New Challenge from
                             </p>
                             <p style='font-size: 16px; font-family: scandia-web, sans-serif; font-weight: 400; color: #1e1f21; margin-top: 40px;'>
-                            Name: $name
-                            Quest Call Option: $option
-                            Phone Number: $phone
-                            Email: $email
-                            Message: $message
+                            Name: $firstName <span>$lastName</span> <br />
+                            Company Name: $companyName <br />
+                            Subject: $subject <br />
+                            Email: $email <br />
+                            Message: $message <br />
                             </p>
                             <div style='background-color: #8CC53F; height: 1px; width: 100%; margin-top: 40px;'></div>
                             <div style='margin-top: 54px; background: #f6f8f9; border-radius: 16px; padding: 16px 16px 32px 16px;'>
@@ -125,7 +126,7 @@ function generateEmailContent($name, $option, $phone, $email, $message) {
     return $message;
 }
 
-function generateSenderEmailContent($name) {
+function generateSenderEmailContent($firstName) {
     $bodySender = "
         <html>
         <head>
@@ -143,10 +144,7 @@ function generateSenderEmailContent($name) {
                             <p style='font-size: 16px; font-family: scandia-web, sans-serif; font-weight: 400; color: #1e1f21; margin-top: 40px;'>
                             </p>
                             <p style='font-size: 16px; font-family: scandia-web, sans-serif; font-weight: 400; color: #1e1f21; margin-top: 40px;'>
-                                Thank you $name for reaching HushHomes to cater for your real estate needs. A business experience manager has been assigned to your needs and will reach you to further discuss how to work with you to achieve your goals.<br /><br />
-                                <br /><br />
-                                You may also decide to schedule a free discovery call here.
-                                <br /><br />
+                                Thank you $firstName for reaching Tusore
                             </p>
                             <div style='background-color: #8CC53F; height: 1px; width: 100%; margin-top: 40px;'></div>
                             <div style='margin-top: 54px; background: #f6f8f9; border-radius: 16px; padding: 16px 16px 32px 16px;'>
