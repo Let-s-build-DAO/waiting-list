@@ -59,7 +59,7 @@
 
     <div class="section-padding-small section-border-bottom">
       <div class="bg-banner">
-        <video width="100%" height="100" autoplay muted>
+        <video width="100%" height="100" autoplay muted loop>
           <source src="../assets/images/tusore_2.mp4" type="video/mp4">
         </video>
       </div>

@@ -16,8 +16,8 @@
                 <div>
                   <div class="small-paragraph">
                     <span class="text-[#D50F0F]">••</span> Port Harcourt
-                    <br />
-                    <a href="tel:2348025402930">Phone: 0802 540 2930.</a>
+                    <!-- <br />
+                    <a href="tel:2348025402930">Phone: 0802 540 2930.</a> -->
                     <br />
                     <a href="mailto:nfo@tusore.com">E-mail: info@tusore.com</a>
                   </div>
@@ -25,8 +25,8 @@
                 <div>
                   <div class="small-paragraph">
                     <span class="text-[#D50F0F]">••</span> Lagos
-                    <br />
-                    <a href="tel:2348091015011">Phone: 0809 101 5011.</a>
+                    <!-- <br />
+                    <a href="tel:2348091015011">Phone: 0809 101 5011.</a> -->
                     <br />
                     <a href="mailto:nfo@tusore.com">E-mail: info@tusore.com</a>
                   </div>
