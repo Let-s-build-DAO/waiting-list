@@ -46,7 +46,7 @@
 
         <div class="small-paragraph flex items-center mt-6 md:mt-0">
           <img src="../assets/images/globe-c.svg" class="mr-2" alt="">
-          <a href="https://chigisoft.com" target="_blank">
+          <a href="#" @click.prevent="openNewTab">
             Chigisoft
           </a>
         </div>
@@ -54,3 +54,14 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const openNewTab = () => {
+  const pageTitle = 'Tusore'; // Replace 'Your Page Name' with the actual name of your page
+  const queryParams = new URLSearchParams({ pageName: pageTitle }).toString();
+  const newTab = window.open('https://chigisoft.com/edge?' + queryParams, '_blank');
+  newTab?.focus();
+};
+</script>
