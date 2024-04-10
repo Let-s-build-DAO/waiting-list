@@ -1,91 +1,230 @@
-.banner-section {
-  padding-top: 160px;
+/* containers */
+.section-padding-y {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-/* page sizings */
-.section-padding-small {
-  padding: 20px;
+.section-padding-y-top {
+  padding-top: 120px;
 }
-.contact-senction {
-  border-top: 1px solid #101010;
-  border-bottom: 1px solid #101010;
+.section-padding-y-bottom {
+  padding-bottom: 120px;
 }
-.section-border-right {
-  border-right: 1px solid #101010;
+.section-padding-x {
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.contact-section {
-  border-top: 1px solid #101010;
-  border-bottom: 1px solid #101010;
-}
-.section-border-bottom {
-  border-bottom: 1px solid #101010;
-}
-.padding-top-80 {
+.padding-80 {
   padding-top: 80px;
 }
+.pricing-card {
+  border: 2px solid #F2EDE7;
+  border-radius: 16px;
+  padding: 32px 24px;
+}
+.abstract {
+  position: relative;
+}
+.abstract:before {
+  background: #ffab1b;
+  content: "";
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+.seo-service-tag {
+  padding: 12px 16px;
+  border: 2px solid #1E1F21;
+  border-radius: 26px;
+  color: #1E1F21;
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.soc-border {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgba(198, 198, 198, 1);
+  margin-right: -14px;
+  transition: 0.3s ease-in-out;
+}
+.socials-logo {
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  background-color: rgba(198, 198, 198, 1);
+  transition: 0.3s ease-in-out;
+}
+.socials-logo img {
+  height: 20px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.soc-border:hover {
+  animation: slideup 1s ease-in-out infinite;
+  transition: 0.3s ease-in-out;
+}
+@keyframes slideup {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
 
-.bg-about {
-  background: linear-gradient(rgba(55, 64, 114, .5), rgba(55, 64, 114, .5)), url(../../assets/images/bg-who-we-are-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+  50% {
+    transform: translate(0, -6px);
+  }
 }
-.bg-services-1 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-pipeline-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+.closee {
+  padding: 16px;
+  border-radius: 26px;
+  background: rgba(30, 31, 33, 1);
+  border: 1px solid rgba(30, 31, 33, 1);
 }
-.bg-services-2 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-construction-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+.modal-container {
+  background: rgba(30, 31, 33, 0.8);
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: 9999999;
+  overflow-y: auto;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
-.bg-services-3 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-mechanical-civil-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+
+.modal-left {
+  width: 80%;
+  background: linear-gradient(193deg, rgba(230, 230, 230, 1), rgba(255, 255, 255, 1), rgba(222, 222, 222, 1));
+  padding: 38px 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
-.bg-services-4 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-telecoms-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+.modal-left2 {
+  width: 60%;
+  background: linear-gradient(193deg, rgba(230, 230, 230, 1), rgba(255, 255, 255, 1), rgba(222, 222, 222, 1));
+  padding: 38px 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
-.bg-services-5 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-electrical-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
-}
-.bg-services-6 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-heat-exchanger-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
-}
-.bg-services-7 {
-  background: linear-gradient(180deg, rgba(16, 16, 16, 0), rgba(16, 16, 16, 1)), url(../../assets/images/img-elect-maintenance-min.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  width: 100%;
+.mo-padding {
+  padding-top: 75px;
 }
 @media (max-width: 821px) {
+  .modal-left {
+    width: 100%;
+    padding: 25px 20px;
+  }
+  .section-padding-y {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-padding-y-top {
+    padding-top: 60px;
+  }
+  .section-padding-y-bottom {
+    padding-bottom: 60px;
+  }
+  .section-padding-x {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .padding-80 {
+    padding-top: 40px;
+  }
+  .pricing-card {
+    border: 2px solid #F2EDE7;
+    border-radius: 16px;
+    padding: 32px 15px;
+  }
+}
+
+.card-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  display: inline-block;
+}
+.card-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 40px 32px;
+  background: linear-gradient(0deg, rgba(48, 53, 68, 0), rgba(30, 31, 33, 1));
+}
+.overlay2 {
+  position: absolute;
+  inset: 0;
+  padding: 46px 36px;
+  background: linear-gradient(180deg, rgba(48, 53, 68, 0), rgba(30, 31, 33, 1));
+}
+.project-tag {
+  border-radius: 26px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 12px 16px;
+}
+.project-tag-b {
+  border-radius: 26px;
+  border: 2px solid #1E1F21;
+  color: #1E1F21;
+  background: transparent;
+  padding: 12px 16px;
+}
+
+
+.check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* When the checkbox is checked, add an orange background */
+.cont2 {
+  position: relative;
+  cursor: pointer;
+  color: rgba(30, 31, 33, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(30, 31, 33, 1);
+}
+
+.check-input:checked ~ .cont2 {
+  background-color: rgba(30, 31, 33, 1);
+  color: #FFFFFF;
+}
+
+.check-con {
+  padding: 8px 12px;
 }

@@ -3,41 +3,80 @@ html {
   line-height: initial;
   transition: 0.9s ease-in-out;
 }
-h1 {
-  font-size: 32px;
-  font-family: "elza", sans-serif;
-  font-weight: 900;
+@font-face {
+  font-family: 'stanger';
+  src: url('../fonts/stanger.otf');
+  font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'stanger-italics';
+  src: url('../fonts/stanger-italic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-size: 40px;
+  font-family: stolzl, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.2;
 }
 h2 {
-  font-size: 24px;
-  font-family: "elza", sans-serif;
-  font-weight: 700;
+  font-size: 32px;
+  font-family: stolzl, sans-serif;
   font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 24px;
+  font-family: stolzl, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h5 {
+  font-size: 20px;
+  font-family: stolzl, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h6 {
+  font-size: 18px;
+  font-family: stolzl, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 .title {
-  font-size: 56px;
-  font-family: "elza", sans-serif;
-  font-weight: 900;
+  font-size: 64px;
+  font-family: stolzl, sans-serif;
   font-style: normal;
+  font-weight: 700;
   line-height: 1.2;
+}
+.big-paragraph {
+  font-size: 21px;
+  line-height: 1.5;
 }
 .small-paragraph {
   font-size: 13px;
 }
+.big-subheader {
+  font-size: 14px;
+}
 
 /* defaults */
 body {
-  font-size: 15px;
-  color: #101010;
-  font-weight: 400;
-  line-height: 1.4;
-  font-family: "pt-sans-pro", sans-serif;
-  font-weight: 400;
+  font-size: 16px;
+  color: #1E1F21;
+  line-height: 1.3;
+  font-family: scandia-web, sans-serif;
   font-style: normal;
+  font-weight: 400;
 }
 
 @media (max-width:768px) {
@@ -60,47 +99,240 @@ body {
 
 
 /* font-family */
-.elza-bold {
-  font-family: "elza", sans-serif;
+.stanger {
+  font-family: 'stanger', sans-serif;
+}
+.stanger-italics {
+  font-family: 'stanger-italics', sans-serif;
+}
+.stozl-medium {
+  font-family: stolzl, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.stozl-bold {
+  font-family: stolzl, sans-serif;
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
 }
-.elza-black {
-  font-family: "elza", sans-serif;
-  font-weight: 900;
+
+.stozl-regular {
+  font-family: stolzl, sans-serif;
   font-style: normal;
-}
-.pt-sans-pro-regular {
-  font-family: "pt-sans-pro", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
-.pt-sans-pro-demi {
-  font-family: "pt-sans-pro", sans-serif;
-  font-weight: 600;
+
+.scandia-medium {
+  font-family: scandia-web, sans-serif;
   font-style: normal;
+  font-weight: 500;
 }
-.pt-sans-pro-bold {
-  font-family: "pt-sans-pro", sans-serif;
-  font-weight: 700;
+
+.scandia-regular {
+  font-family: scandia-web, sans-serif;
   font-style: normal;
+  font-weight: 400;
+}
+
+.br-16 {
+  border-radius: 16px;
 }
 
 /* buttons */
-.btn-xlg-responsive {
-  padding: 23px 20px;
+.btn-wwu {
+  padding: 8px 12px;
+  border: 2px solid #1E1F21;
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
-/* cookies */
-.cookieControl__Bar p {
-  font-size: 13px !important;
-  margin: 5px 0 0;
+.btn-primary {
+  padding: 16px 24px;
+  border: 2px solid #1E1F21;
+  border-radius: 8px;
+  background-color: #FBB56C;
+  font-size: 16px;
+  box-shadow: 3px 3px 0 rgba(30, 31, 33, 1);
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
-.cookieControl button {
-  backface-visibility: hidden;
-  border: 0;
+.btn-primary-w {
+  padding: 16px 24px;
+  border: 2px solid #1E1F21;
+  border-radius: 8px;
+  background-color: #FBB56C;
+  font-size: 16px;
+  box-shadow: 3px 3px 0 rgba(255, 255, 255, 1);
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.btn-alt {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 2px solid #FBB56C;
+  background: #FEF7EF;
+  box-shadow: 3px 3px 0 rgba(255, 255, 255, 1);
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.btn-link {
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: scandia-web, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.btn-link:hover img {
+  margin-left: 10px;
+}
+
+/* inputs */
+.vuche-input {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+  background-color: #353638;
+  box-shadow: 0 3px 0 #1E1F21;
+  padding: 16px 20px;
+  color: #FFFFFF;
+}
+.vuche-input::placeholder {
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.vuche-floating-label-content {
+  position: relative;
+}
+
+.vuche-floating-label {
+  color: #1E1F21;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  background-color: #E8E8E8;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.vuche-form-input {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  background-color: #E8E8E8;
+  box-shadow: 0 3px 0 rgba(30, 31, 33, 1);
+  padding: 16px 20px;
+  color: rgba(30, 31, 33, .8);
+}
+.vuche-form-input:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+.vuche-form-input:focus ~ .vuche-floating-label {
+  top: 4px;
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+.vuche-form-input:not(:placeholder-shown) ~ .vuche-floating-label {
+  top: 4px;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+
+input:focus-visible {
+  outline: none;
+  color: #1E1F21;
+  background: #FFFFFF;
+  overflow: auto;
+}
+textarea:focus-visible {
+  outline: none;
+  color: #1E1F21;
+  background: #FFFFFF;
+  overflow: auto;
+}
+
+/* vue tel input */
+.vti__input {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #E8E8E8;
+  border-radius: 8px !important;
+  color: rgba(30, 31, 33, .8);
+  outline: none !important;
+  border: none !important;
+}
+
+.vti__dropdown {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  padding: 7px;
   cursor: pointer;
-  font-size: 14px !important;
-  outline: 0;
-  padding: 10px 20px !important;
-  transition: background-color .2s,color .2s;
+  color: #1e1f21 !important;
+  background-color: #E8E8E8;
+  padding: 0 !important;
+  margin: 4px;
+  outline: none;
+}
+
+.vue-tel-input {
+  width: 100%;
+  border-radius: 8px !important;
+  border: 2px solid #000000 !important;
+  background-color: #E8E8E8;
+  box-shadow: 0 3px 0 rgba(30, 31, 33, 1);
+}
+
+.vue-tel-input::placeholder {
+  transition: 0.5s ease-in-out;
+  color: rgba(255, 255, 255, .5) !important;
+  font-size: 16px !important;
+}
+
+.vue-tel-input::placeholder:focus {
+  transition: 0.5s ease-in-out;
+  color: rgba(255, 255, 255, .5) !important;
+  font-size: 16px !important;
+}
+
+.vue-tel-input:focus-within {
+  transition: 0.5s ease-in-out;
+  outline: none !important;
+  border-radius: 8px !important;
+  border: 2px solid #000000 !important;
+  background-color: #E8E8E8;
+  box-shadow: 0 3px 0 rgba(30, 31, 33, 1) !important;
+}
+
+.vue-tel-input:focus {
+  transition: 0.5s ease-in-out;
+  outline: none !important;
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 0 3px 0 rgba(30, 31, 33, 1) !important;
+}
+.form-container {
+  padding: 16px;
+  border-radius: 16px;
+  background: #FFFFFF;
+}
+/* colors */
+.c-white-0 {
+  color: rgba(255, 255, 255, .8);
 }
