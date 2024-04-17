@@ -20,11 +20,15 @@
           </nuxt-link>
         </div>
 
-        <div class="mt-10 relative">
-          <div class="vid-mock"></div>
-        </div>
+        <section class="mt-10 relative">
+          <div class="vid-mock">
+            <video class="video" autoplay loop muted>
+              <source src="../assets/images/bg-vuche.mp4" type="video/mp4">
+            </video>
+          </div>
+        </section>
 
-        <div class="mt-10 relative">
+        <section class="mt-10 relative">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-2 relative">
             <nuxt-link to="/branding-and-design">
               <div class="card-container">
@@ -62,7 +66,7 @@
               </div>
             </nuxt-link>
           </div>
-        </div>
+        </section>
 
         <div class="section-padding-y-top relative">
           <div class="flex">
@@ -290,7 +294,8 @@ const openModalWithProjectInfo = (project) => {
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);
-  height: 500px;
+  background-size: cover;
+  height: auto;
   width: 100%;
 }
 

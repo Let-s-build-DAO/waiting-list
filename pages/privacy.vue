@@ -82,7 +82,11 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Privacy | Vuche Studio'",
+});
+</script>
 
 <style scoped>
 .banner-container {

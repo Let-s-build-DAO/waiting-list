@@ -53,6 +53,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Motion and Film | Vuche Studio'",
+});
 </script>
 
 <style scoped>

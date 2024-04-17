@@ -33,13 +33,13 @@
               </div>
             </div>
   
-            <div class="flex mt-10">
+            <div class="block md:flex mt-10">
               <div class="w-full md:w-2/12">
                 <h5>
                   What we do…
                 </h5>
               </div>
-              <div class="w-full md:w-10/12 ml-8">
+              <div class="w-full md:w-10/12 ml-0 md:ml-8 mt-6 md:mt-0">
                 <p>
                   {{ projectInfo.modalText}}
                 </p>

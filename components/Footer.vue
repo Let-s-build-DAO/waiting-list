@@ -33,7 +33,7 @@
               <a href="tel:+18257344811">+1 825-734-4811</a>
             </h4>
           </div>
-          <div>
+          <div v-if="userLocation?.countryName === 'Nigeria'">
             <h6>
               Port Harcourt RV, NG🇳🇬<br />
               <a href="mailto:hi@vuche.studio">hi@vuche.studio</a>
@@ -106,16 +106,16 @@
           Design
         </h5>
 
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Graphic design
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Content creation & design
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Product design (UX/UI/IxD)
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Website design.
         </p>
       </div>
@@ -125,16 +125,16 @@
           Marketing
         </h5>
 
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Content marketing
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Digital marketing/ads
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Influencer marketing
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Social media.
         </p>
       </div>
@@ -145,13 +145,13 @@
           Motion Design and Film
         </h5>
 
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           2D & 3D Animation
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Video edits and post production
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Animation films and ads.
         </p>
       </div>
@@ -162,13 +162,13 @@
           Branding
         </h5>
 
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Brand design
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Brand management
         </p>
-        <p class="mt-4">
+        <p class="mt-4 c-white-0">
           Corporate brand comms.
         </p>
       </div>
@@ -177,7 +177,7 @@
     <div class="padding-80 text-[#FFFFFF]">
       <div class="block md:flex justify-between">
         <div class="big-subheader">
-          © {{ new Date().getFullYear() }} © 2024 VUCHE STUDIO • <nuxt-link to="/terms">TERMS</nuxt-link> • <nuxt-link to="/privacy">PRIVACY POLICY</nuxt-link>
+          © {{ new Date().getFullYear() }} VUCHE STUDIO • <nuxt-link to="/terms">TERMS</nuxt-link> • <nuxt-link to="/privacy">PRIVACY POLICY</nuxt-link>
         </div>
 
         <div class="small-paragraph flex items-center mt-6 md:mt-0">
@@ -195,12 +195,21 @@
 </template>
 
 <script setup lang="ts">
+import useLocation from "~/composables/useLocation";
+import type { UserIP } from "~/typings/global";
+const userLocation = ref<UserIP>();
+const { fetchUserLocation } = useLocation();
+
+onMounted(async () => {
+  const location = await fetchUserLocation();
+  userLocation.value = location;
+});
 const modal = ref(false);
 const openModal = () => {
   modal.value = !modal.value;
 }
 const openNewTab = () => {
-  const pageTitle = 'Vuche'; // Replace 'Your Page Name' with the actual name of your page
+  const pageTitle = 'Vuche studio'; // Replace 'Your Page Name' with the actual name of your page
   const queryParams = new URLSearchParams({ pageName: pageTitle }).toString();
   const newTab = window.open('https://chigisoft.com/edge?' + queryParams, '_blank');
   newTab?.focus();

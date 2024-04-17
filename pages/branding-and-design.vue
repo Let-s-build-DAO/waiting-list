@@ -426,6 +426,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Branding and Design | Vuche Studio'",
+});
 import useLocation from "~/composables/useLocation";
 import type { UserIP } from "~/typings/global";
 const basic = ref("");

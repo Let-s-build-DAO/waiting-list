@@ -298,6 +298,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "SEO and Content | Vuche Studio'",
+});
 import useLocation from "~/composables/useLocation";
 import type { UserIP } from "~/typings/global";
 const grapicsDesign = ref("");

@@ -15,7 +15,9 @@
           </h1>
           <div class="mt-8 relative">
             <div class="vid-mock">
-
+              <video class="video" autoplay muted>
+                <source src="../assets/images/bg-vuche.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
@@ -290,6 +292,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Social Media Management | Vuche Studio'",
+});
 import useLocation from "~/composables/useLocation";
 import type { UserIP } from "~/typings/global";
 const starter = ref("");

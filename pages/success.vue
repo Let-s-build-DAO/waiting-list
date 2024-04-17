@@ -41,6 +41,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Success | Vuche Studio'",
+});
 const firstName = ref('');
 
 onMounted(() => {

@@ -50,7 +50,9 @@
 
 <script setup lang="ts">
 import { defineEmits, ref, reactive } from 'vue'
-
+useHead({
+  title: "Website Discovery | Vuche Studio'",
+});
 const activeLink = ref(1)
 
 const changeActiveLink = (link: number) => {

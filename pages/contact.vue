@@ -235,7 +235,9 @@
 //   }
 // };
 
-
+useHead({
+  title: "Contact | Vuche Studio'",
+});
 const data = reactive({
   name: '',
   email: '',

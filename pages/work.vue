@@ -60,7 +60,9 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: "Work | Vuche Studio'",
+});
 const isModalVisible = ref(false);
 const selectedProjectInfo = ref({});
 

@@ -151,7 +151,7 @@
       </div>
 
       <div class="mt-10">
-        <button class="btn-primary-w text-[#1E1F21]">
+        <button class="btn-primary text-[#1E1F21]">
           Contribute to the cause
         </button>
       </div>
@@ -233,6 +233,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "About | Vuche Studio'",
+});
+
 </script>
 
 <style scoped>

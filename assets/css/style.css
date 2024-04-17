@@ -158,6 +158,13 @@ body {
   font-family: scandia-web, sans-serif;
   font-style: normal;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: rgba(30, 31, 33, 1);
+  box-shadow: 3px 3px 0 rgba(251, 181, 108, 1);
+  color: #FBB56C;
+  transition: 0.3s ease-in-out;
 }
 .btn-primary-w {
   padding: 16px 24px;
@@ -169,6 +176,13 @@ body {
   font-family: scandia-web, sans-serif;
   font-style: normal;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.btn-primary-w:hover {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 3px 3px 0 rgba(251, 181, 108, 1);
+  color: #FBB56C;
+  transition: 0.3s ease-in-out;
 }
 .btn-alt {
   padding: 16px 24px;
@@ -179,6 +193,7 @@ body {
   font-family: scandia-web, sans-serif;
   font-style: normal;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 .btn-link {
   font-size: 16px;
