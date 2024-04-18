@@ -343,7 +343,7 @@ onMounted(async () => {
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);
-  height: 500px;
+  height: auto;
   width: 100%;
 }
 

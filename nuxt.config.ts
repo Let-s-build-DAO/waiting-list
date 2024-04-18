@@ -50,7 +50,15 @@ export default defineNuxtConfig({
         //   content: `TUSORE LIMITED is an indigenous Engineering, Procurement, Construction, Installation, & Commissioning company that have delivered turnkey projects over the past twenty-seven (27) years.`,
         // },
       ],
-      
+      script: [
+        {
+          hid: 'tawkto', // A unique identifier for this script block
+          src: 'https://embed.tawk.to/63da6062474251287910dd75/1go6gh0p6',
+          defer: true,
+          charset: 'UTF-8',
+          crossorigin: 'anonymous'
+        }
+      ]
     },
   },
   css: ['@/assets/css/style.css', '@/assets/css/main.css'],

@@ -15,7 +15,9 @@
           </h1>
           <div class="mt-8 relative">
             <div class="vid-mock">
-
+              <video class="video" autoplay muted>
+                <source src="../assets/images/bg-vuche.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
@@ -66,7 +68,7 @@ useHead({
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);
-  height: 500px;
+  height: auto;
   width: 100%;
 }
 

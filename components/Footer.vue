@@ -211,7 +211,7 @@ const openModal = () => {
 const openNewTab = () => {
   const pageTitle = 'Vuche studio'; // Replace 'Your Page Name' with the actual name of your page
   const queryParams = new URLSearchParams({ pageName: pageTitle }).toString();
-  const newTab = window.open('https://chigisoft.com/edge?' + queryParams, '_blank');
+  const newTab = window.open('https://chigisoft.ca/edge?' + queryParams, '_blank');
   newTab?.focus();
 };
 </script>

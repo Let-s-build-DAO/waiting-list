@@ -116,7 +116,7 @@ const activeLink = () => {
     .then((res) => {
       if (res.ok) {
         console.log(res.json());
-        const firstName = data.name.split(' ')[0];
+        const firstName = props.contactInfo.name ? props.contactInfo.name.split(' ')[0] : 'User';
         window.location.href = '/success?firstName=' + encodeURIComponent(firstName);
       } else {
         throw new Error("Failed to send message");
