@@ -22,7 +22,7 @@
 
         <section class="mt-10 relative">
           <div class="vid-mock">
-            <video class="video" autoplay loop muted>
+            <video class="video" autoplay loop muted webkit-playsinline playsinline>
               <source src="../assets/images/bg-vuche.mp4" type="video/mp4">
             </video>
           </div>
@@ -287,10 +287,6 @@ const openModalWithProjectInfo = (project) => {
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);

@@ -11,7 +11,7 @@
 
         <div class="mt-4">
           <h1 class="w-full md:w-10/12">
-            Increase your sales with strategic and intentional Social Media management and digital marketing.
+            Increase your sales <span class="stanger-italics">with</span> strategic <span class="stanger-italics">and</span> intentional Social Media management and digital marketing.
           </h1>
           <div class="mt-8 relative">
             <div class="vid-mock">
@@ -336,10 +336,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);

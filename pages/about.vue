@@ -240,10 +240,6 @@ useHead({
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 .about-banner {
   background: linear-gradient(rgba(30, 31, 33, .4), rgba(30, 31, 33, .4)), url(../assets/images/bg-about-page-min.jpg);
   padding: 120px 80px;

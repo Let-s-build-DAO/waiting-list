@@ -61,10 +61,6 @@ useHead({
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 .vid-mock {
   border-radius: 16px;
   background: rgba(0, 0, 0, 1);

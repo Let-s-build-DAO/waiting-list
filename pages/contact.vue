@@ -325,10 +325,6 @@ function submitForm() {
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 @media (max-width: 821px) {
 }
 </style>

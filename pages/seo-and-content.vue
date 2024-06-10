@@ -417,10 +417,6 @@ function submitForm() {
 </script>
 
 <style scoped>
-.banner-container {
-  padding-top: 200px;
-  padding-bottom: 120px;
-}
 .bg-seo {
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../assets/images/img-seo-min.jpg);
   background-repeat: no-repeat;

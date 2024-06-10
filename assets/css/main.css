@@ -263,3 +263,13 @@
 .check-con {
   padding: 8px 12px;
 }
+.banner-container {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+@media (max-width: 821px) {
+  .banner-container {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+}
