@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Lets Build DAO',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpeg' },
         {
           rel: 'preconnect',
           href: 'https://fonts.googleapis.com'
